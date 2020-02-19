@@ -6,11 +6,9 @@ def prime?(integer)
       return false
     elsif i < integer
       binding.pry
-      i..integer - 1 
-        return false if integer % i == 0 
+      i..integer - 1
+        return false if integer % i == 0
         i += 1
     end
     true
 end
-
-
