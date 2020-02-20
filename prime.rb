@@ -6,9 +6,8 @@ def prime?(integer)
       return false
     elsif i < integer
       binding.pry
-      i..integer - 1
-        return false if integer % i == 0
-        i += 1
+      range = (i..integer - 1).to_a
+    range.collect {|b| return false if integer % b == 0 }
     end
     true
 end
