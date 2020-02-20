@@ -5,7 +5,7 @@ def prime?(integer)
     if integer.negative? || integer < 2
       return false
     elsif i < integer
-      binding.pry
+
       range = (i..integer - 1).to_a
     range.collect {|b| return false if integer % b == 0 }
     end
